@@ -119,3 +119,4 @@ docs/
 - El `base` path debe coincidir exactamente con el nombre de tu repositorio
 - Si cambias el nombre del repositorio, necesitas reconstruir y redesplegar
 
+

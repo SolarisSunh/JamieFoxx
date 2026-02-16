@@ -33,3 +33,4 @@ This document lists all sources used to verify factual claims in the presentatio
 - Medical information about 2023 health events is intentionally omitted per production safety rules
 - "Grandma's Hands" (2025) is not included as it requires additional verification beyond the provided source
 
+
