@@ -6,8 +6,10 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "postbuild": "if not exist docs\\.nojekyll (echo. > docs\\.nojekyll)",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "npm run build"
   },
   "dependencies": {
     "framer-motion": "^12.34.0",

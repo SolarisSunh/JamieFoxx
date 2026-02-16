@@ -12,6 +12,9 @@ dist
 dist-ssr
 *.local
 
+# GitHub Pages build output (se incluye en el repo)
+# docs/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

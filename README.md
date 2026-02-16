@@ -131,6 +131,51 @@ All factual claims in the presentation are verified and documented:
 - Requires CSS Scroll Snap support
 - Requires CSS Grid and Flexbox support
 
+## Deployment to GitHub Pages
+
+### Opción 1: GitHub Actions (Recomendado)
+
+El proyecto incluye un workflow de GitHub Actions que automáticamente construye y despliega el sitio cuando haces push a la rama `main` o `master`.
+
+1. **Habilita GitHub Pages en tu repositorio:**
+   - Ve a Settings → Pages
+   - En "Source", selecciona "GitHub Actions"
+
+2. **Haz push del código:**
+   ```bash
+   git add .
+   git commit -m "Initial commit"
+   git push origin main
+   ```
+
+3. El workflow se ejecutará automáticamente y desplegará el sitio.
+
+### Opción 2: Build Manual
+
+Si prefieres hacer el build manualmente:
+
+1. **Construye el proyecto:**
+   ```bash
+   npm run build
+   ```
+
+2. **Configura GitHub Pages:**
+   - Ve a Settings → Pages en tu repositorio
+   - En "Source", selecciona la carpeta `docs`
+   - Guarda los cambios
+
+3. **Haz commit y push de la carpeta `docs`:**
+   ```bash
+   git add docs
+   git commit -m "Deploy to GitHub Pages"
+   git push origin main
+   ```
+
+**Nota:** Si tu repositorio no está en la raíz del dominio, actualiza `VITE_REPO_NAME` en `vite.config.ts` con el nombre de tu repositorio, o crea un archivo `.env` con:
+```
+VITE_REPO_NAME=tu-nombre-repo
+```
+
 ## License
 
 This project is for presentation purposes. All content about Jamie Foxx is factual and properly cited.
